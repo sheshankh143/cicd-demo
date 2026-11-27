@@ -1,0 +1,13 @@
+name: Trigger Demo
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Message
+        run: echo "Hello! GitHub Actions was triggered!"
